@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="LightsOutUWP1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LightsOutUWP1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Canvas Name="boardCanvas" RelativePanel.AlignHorizontalCenterWithPanel="True" Width="600" Height="600"/>
+        <Button Width="200" Height="80" Background="Gray" Content="New Game" RelativePanel.AlignLeftWith="boardCanvas"  RelativePanel.Below="boardCanvas" Margin="0,10,0,0" Click="NewGame_Click"/>
+        <Button Width="200" Height="80" Background="Gray" Content="About" RelativePanel.AlignRightWith="boardCanvas" RelativePanel.Below="boardCanvas" Margin="0,10,0,0" Click="About_Click"/>
+    </RelativePanel>
+</Page>
